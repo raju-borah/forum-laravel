@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+//php -S localhost:8000 -t public/
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
